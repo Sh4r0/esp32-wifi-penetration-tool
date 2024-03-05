@@ -5,38 +5,38 @@ menu "Wi-Fi Controller"
         default 20
         help
         Maximum number of scanned nearby AP
-    menu "Management AP"
+    menu "cocone1"
         config MGMT_AP_SSID
-            string "Management AP SSID"
+            string "cocone1 SSID"
             default "ManagementAP"
             help
-            SSID of management AP
+            SSID of cocone1
 
         config MGMT_AP_PASSWORD
-            string "Management AP Password"
-            default "mgmtadmin"
+            string "cocone1 Password"
+            default "esp32perchesi"
             help
-            Password for management AP WPA2 (minimum 8 characters)
+            Password for cocone1 WPA2 (minimum 8 characters)
 
         config MGMT_AP_CHANNEL
-            int "Management AP channel"
+            int "cocone1 channel"
             range 1 13
             default 3
             help
-            Channel on which management AP should run
+            Channel on which cocone1 should run
             
         config MGMT_AP_MAX_CONNECTIONS
             int "Maximum number of connected clients"
             range 0 10
             default 1
             help
-            Password for management AP
+            Password for cocone1
 
         config MGMT_AP_AUTH_ON
-            bool "Password protected management AP"
+            bool "Password protected cocone1"
             default y
             help
                 If set to true, WPA2-PSK will be used. Otherwise authentication will be open
-                and anyone can connect to this management AP.
+                and anyone can connect to this cocone1.
     endmenu
 endmenu
